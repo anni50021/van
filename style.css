@@ -55,7 +55,7 @@ body {
 /* Главный экран */
 .hero {
     padding: 150px 50px 50px;
-    background-image: url('wr-960.webp');
+    background-image: url('WR-960.webp');
     background-size: cover;
     min-height: 100vh;
 }
@@ -240,3 +240,4 @@ input[type="submit"] {
   }
 
   
+
