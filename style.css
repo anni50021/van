@@ -1,0 +1,241 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0a0a2a;
+    color: #ffffff;
+}
+
+/* Шапка */
+.header {
+    padding: 20px 50px;
+    background-color: rgba(10, 10, 42, 0.9);
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header__nav {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.header__link {
+    color: #ffffff;
+    text-decoration: none;
+}
+.header__link:hover {
+    color: #fef100;
+    text-decoration: none;
+}
+
+.header__button {
+    background-color: #e74362;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* Главный экран */
+.hero {
+    padding: 150px 50px 50px;
+    background-image: url('../New5/wr-960.webp');
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.hero__label {
+    color: #e74362;
+    margin-bottom: 20px;
+}
+
+.hero__title {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #e74362;
+}
+
+.hero__subtitle {
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #e74362;
+}
+
+.hero__button {
+    background-color: #e74362;
+    color: #ffffff;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+.hero__stats {
+    display: flex;
+    gap: 50px;
+}
+
+.hero__stat {
+    display: flex;
+    flex-direction: column;
+    color: #0a0a2a;
+}
+
+.hero__stat-label {
+    color: #0a0a2a;
+    font-size: 14px;
+}
+
+/* Информационный блок */
+.info {
+    padding: 50px;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    
+}
+
+.info__image {
+    width: 50%;
+    height: 400px;
+    background-image: url('../New5/p7142.jpg'); 
+    background-size: cover;
+}
+
+.info__content {
+    width: 50%;
+}
+
+.info__title {
+    margin-bottom: 20px;
+}
+
+.info__text {
+    margin-bottom: 15px;
+    line-height: 1;
+}
+/*Класс about*/
+.about {
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 50px;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.about__title {
+    width: 50%;
+    /* height: 400px; */
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #e74362;
+}
+
+.about__text {
+    width: 50%;
+}
+
+/*Класс diploma*/
+.diploma {
+    padding: 50px;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    
+}
+
+.diploma__title {
+    width: 50%;
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #e74362;
+}
+.diploma__text{
+    width: 50%;
+}
+/*Класс footer*/
+.footer{
+    padding: 20px 50px;
+    background-color: rgba(74, 79, 81, 0.9);
+    width: 100%;
+}
+.footer__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.footer__info{    
+    display: flex;
+    gap: 50px;
+    }
+    /*Для кнопки*/
+input[type="submit"] {
+    background-color: #e74362;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #e74362;
+    color: #fef100;
+  }
+  fieldset {
+    border: none;
+    margin-bottom: 30px;
+  }
+  /*Для формы*/
+  form {
+    width: 800px;
+    margin: 150px auto;
+    background-color: rgba(74, 79, 81, 0.9);
+    color: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.1);
+  }
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  }
+  
+  textarea {
+    height: 100px; /* Увеличили высоту textarea */
+    resize: vertical; /* Разрешено изменение высоты, но не ширины */
+  }
+  

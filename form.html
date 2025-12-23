@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Системный аналитик - Курсы повышения квалификации</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__content">
+            <div class="header__logo">Курсы повышения квалификации</div>
+            <nav class="header__nav">
+                <a href="index.html" class="header__link">ГЛАВНАЯ</a>
+                <a href="info.html" class="header__link">О ПРОФЕССИИ</a>
+                <button class="header__button"><a href="form.html" class="header__link">ЗАПИСАТЬСЯ</a></button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section>
+            <div class="content">
+                <form action="action_form_new.php" method="post">
+                        <fieldset>
+                          <label for="lastname">Фамилия:</label>
+                          <input type="text" name="lastname" id="lastname">
+                        </fieldset>
+                      
+                        <fieldset>
+                          <label for="firstname">Имя, Отчество:</label>
+                          <input type="text" name="firstname" id="firstname" required>
+                        </fieldset>
+                      
+                        <fieldset>
+                          <label for="answer">Введите свои контактные данные. В ближайшее время с Вами свяжутся наши специалисты. Спасибо за выбор наших КПК.</label><br>
+                          <textarea name="answer" id="answer" rows="5" cols="50" required></textarea>
+                        </fieldset>
+                        <input type="submit" value="Отправить">
+                      </form>
+              </div>
+              <div id="message" style="text-align: center; color: #e74362; font-size: larger;"></div>
+              <script>
+                  const form = document.querySelector('form');
+                  const messageDiv = document.getElementById('message');
+                  const content = document.querySelector('.main'); // Добавили выбор main элемента
+
+            form.addEventListener('submit', function(event) {
+                event.preventDefault();
+                messageDiv.textContent = 'Вы отправили данные'; // Показываем сообщение
+                messageDiv.style.display = 'block'; 
+                content.style.backgroundColor = 'rgba(74, 79, 81, 0.9)'; // Изменение цвета фона
+              });
+              </script>
+          </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="footer__info">
+                <p>г. Томск, пл. Соляная, д.2</p>
+                <p>app_math@tsuab.ru</p>
+                <p>Сайт разработан группой студентов ТГАСУ</p>
+                <p></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
