@@ -55,7 +55,7 @@ body {
 /* Главный экран */
 .hero {
     padding: 150px 50px 50px;
-    background-image: url('../New5/wr-960.webp');
+    background-image: url('wr-960.webp');
     background-size: cover;
     min-height: 100vh;
 }
@@ -115,7 +115,7 @@ body {
 .info__image {
     width: 50%;
     height: 400px;
-    background-image: url('../New5/p7142.jpg'); 
+    background-image: url('p7142.jpg'); 
     background-size: cover;
 }
 
@@ -238,4 +238,5 @@ input[type="submit"] {
     height: 100px; /* Увеличили высоту textarea */
     resize: vertical; /* Разрешено изменение высоты, но не ширины */
   }
+
   
